@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F5F7FB;
+  font-family: 'Karla', sans-serif;
+  color: #293264;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #F5F5F5;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.wrapper>h1 {
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.wrapper>h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+
+.button-start-quiz {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-block: 10px;
+  width: 195px;
+  height: 50px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 15px;
+  align-self: center;
+}
+
+.question-block {
+  border-bottom: 1px solid #DBDEF0;
+  padding: 10px 0;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.answers {
+  display: flex;
+  gap: 15px;
+}
+
+.answer {
+  cursor: pointer;
+  text-align: center;
+  padding: 2px 5px;
+  margin-block: 10px;
+  font-size: 10px;
+  font-weight: lighter;
+  border-radius: 7px;
+  border: 1px solid #293264;
+  letter-spacing: -0.03rem;
+}
+
+.answer-selectable:hover {
+  background: #D6DBF5;
+}
+
+.answer-selected {
+  background: #D6DBF5;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.answer-correct {
+  background: #94D7A2;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.answer-wrong {
+  background: #F8BCBC;
+}
+
+.answer-disabled {
+  color: gray;
+  border: 1px solid gray;
+}
+
+.submit-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-submit {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+
+  width: 120px;
+  height: 35px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+}
+
+.button-submit-disabled {
+  cursor: not-allowed;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  width: 120px;
+  height: 35px;
+  background-color: #2b3357;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+
+}
+
+.correct-indicator {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+}
