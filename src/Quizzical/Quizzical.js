@@ -4,7 +4,7 @@ import Question from './Question'
 
 const API_URL = "https://opentdb.com/api.php?amount=5&type=multiple"
 
-export default function (props) {
+export default function Quizzical(props) {
 
     const [questions, setQuestions] = React.useState()
     const [submitted, setSubmitted] = React.useState(false)
